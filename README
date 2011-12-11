@@ -2,6 +2,12 @@ Author: Ishan Thilina Somasiri
 Web: www.ishans.info
 Blog: www.blog.ishans.info
 
+NOTE:
+
+Please note that this script works only in newer linux versions like Ubuntu 11.10(or any linux distribution which uses Gnome 3 or updated D-Bus interfaces) or later. 
+
+You can find a script which works for the older distributions in the gnome2 branch.
+
 About:
 
 
@@ -9,6 +15,4 @@ This script is used to set the brightness of the monitor to the desired value at
 
 If you need more information on the script, please visit http://blog.ishans.info/2011/09/25/set-brightness-automatically-at-the-startup-in-linux/
 
-NOTE:
 
-Please note that this script works only in newer linux versions like Ubuntu 11.10(or any linux distribution which uses Gnome 3 or updated D-Bus interfaces) or later. 
