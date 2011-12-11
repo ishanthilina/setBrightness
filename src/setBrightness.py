@@ -1,9 +1,26 @@
+#!/usr/bin/env python
+
+#setBrightness:: A script to set the display brightness automatically to
+#the desired value at the startup.
+#
+#Author: Ishan Thilina Somasiri
+#E-mail: ishan@ishans.info
+#Version: 1
+#Release date: 25th Sep 2011
+#
+
+
 import dbus
 bus = dbus.SessionBus()
 
-proxy = bus.get_object('org.gnome.SettingsDaemon',
-                       '/org/gnome/SettingsDaemon/Power')
+###################################################
+#Change this value to change the startup brightness
+value=0
+###################################################
 
-iface=dbus.Interface(proxy,dbus_interface='org.gnome.SettingsDaemon.Power.Screen')
+proxy = bus.get_object('org.gnome.PowerManager',
+                       '/org/gnome/PowerManager/Backlight')
 
-iface.SetPercentage(0)
+iface=dbus.Interface(proxy,dbus_interface='org.gnome.PowerManager.Backlight')
+
+iface.SetBrightness(value)

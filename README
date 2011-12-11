@@ -4,9 +4,9 @@ Blog: www.blog.ishans.info
 
 NOTE:
 
-Please note that this script works only in newer linux versions like Ubuntu 11.10(or any linux distribution which uses Gnome 3 or updated D-Bus interfaces) or later. 
+Please note that this script works only in in Gnome 2 variants of linux distros.
 
-You can find a script which works for the older distributions in the gnome2 branch.
+You can find a script which works for the newer gnome 3 distributions in the master branch.
 
 About:
 
