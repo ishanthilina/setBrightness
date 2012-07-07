@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import dbus
 bus = dbus.SessionBus()
 
@@ -6,4 +7,4 @@ proxy = bus.get_object('org.gnome.SettingsDaemon',
 
 iface=dbus.Interface(proxy,dbus_interface='org.gnome.SettingsDaemon.Power.Screen')
 
-iface.SetPercentage(0)
+iface.SetPercentage(30)
