@@ -3,6 +3,10 @@ import argparse
 import dbus
 import datetime
 
+# Level settings:
+day_level=75
+night_level=20
+
 bus = dbus.SessionBus()
 
 proxy = bus.get_object('org.gnome.SettingsDaemon',
@@ -31,10 +35,10 @@ if not args.level:
   #print "Current hour: %d" % now.hour
 
   if now.hour > 7 and now.hour < 20:
-    level=75
+    level = day_level
     #print "Brigthness Changed"
   else:
-    level=20
+    level = night_level
     
 else:
   level = args.level
