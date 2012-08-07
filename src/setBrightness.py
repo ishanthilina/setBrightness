@@ -41,7 +41,7 @@ if not args.level and args.level != 0:
     else:
         level = night_level
 
-    else:
+else:
         level = args.level
 
 print "Setting brightness to: ", level
