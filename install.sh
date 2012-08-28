@@ -15,14 +15,15 @@ if [ ! -d "$INSTALLATION_DIR" ]; then
     mkdir $INSTALLATION_DIR
     #copy the source file
     cp $CURRENT_DIR"/src/setBrightness.py" $INSTALLATION_DIR
+    #copy the config file
+    cp $CURRENT_DIR"/conf/config.cfg" $INSTALLATION_DIR
+
 
     #check for the existence of the startup app folder
     if [ -d "$START_APP_DIR" ]; then
 	#copy the auto start file
 	cp $CURRENT_DIR"/conf/setBrightness.desktop" $START_APP_DIR
-	#copy the config file
-	cp $CURRENT_DIR"/conf/config.cfg" $START_APP_DIR
-	
+		
     else
 	#create the directory
 	mkdir $START_APP_DIR
