@@ -20,6 +20,8 @@ if [ ! -d "$INSTALLATION_DIR" ]; then
     if [ -d "$START_APP_DIR" ]; then
 	#copy the auto start file
 	cp $CURRENT_DIR"/conf/setBrightness.desktop" $START_APP_DIR
+	#copy the config file
+	cp $CURRENT_DIR"/conf/config.cfg" $START_APP_DIR
 	
     else
 	#create the directory
