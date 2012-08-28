@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec= python /home/ishan/.setBrightness/setBrightness.py 0
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=setBrightness
+Name=setBrightness
+Comment[en_US]=Set brightness at the startup
+Comment=Set brightness at the startup
