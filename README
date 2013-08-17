@@ -11,7 +11,7 @@ You can find a script which works for the older distributions in the gnome2 bran
 About:
 
 
-This script is used to set the brightness of the monitor to the desired value at the startup (Some linux distros reset the monitor brightness to full level when the computer is restarted, this can script can be used to avoid that).
+This script is used to set the brightness of the monitor to the desired value at the startup (Some linux distros reset the monitor brightness to full level when the computer is restarted, this script can be used to avoid that).
 
 If you need more information on the script, please visit http://blog.ishans.info/2011/09/25/set-brightness-automatically-at-the-startup-in-linux/
 
